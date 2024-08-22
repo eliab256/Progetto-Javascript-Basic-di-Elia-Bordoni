@@ -5,7 +5,7 @@ function updateDisplay(){
 }
 
 function addition(){
-    counter++;
+    counter++;  
     updateDisplay();
 }
 
