@@ -7,22 +7,21 @@
   html, body{
     height: 100%;
     width: 100%;
-    overflow: auto;
-    
+    overflow: auto; 
   }
 
-  a{
+  button{
     cursor: pointer;
   }
 
-  .width-controller{
+  .widthController{
     width: 100%;
     height: 100%;
     margin: 0 auto;
     align-content: center;
   }
 
-  .counter-container{
+  .counterContainer{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -31,15 +30,14 @@
     width:80%;
     border: black 3px solid;
     border-radius: 8px;
-    background-image: url(Assets/img/Wood\ Material.png);
+    background-image: url(Assets/img/WoodMaterial.png);
     background-position: center; 
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+   /* background: linear-gradient(to top,rgb(4, 4, 147), rgb(16, 16, 16)); */
     padding: 3%;
-    
-   
   }
 
-  .counter-key{
+  .operatorButtons{
     width: 48% ;
     border: black solid 3px;
     height: 30%;
@@ -51,8 +49,6 @@
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    font-size: 50%;  
-    font-size: 100px;
     box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
 }
 
@@ -66,7 +62,7 @@ button:active{
 }
 
 .display{
-    height: 40%;
+    height: 30%;
     width: 100%;
     border: rgb(0, 0, 0) 3px solid;
     border-radius: 10px;
@@ -77,9 +73,13 @@ input {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    font-size: 100px;
     background-color: rgba(106, 183, 146, 0.515);
     box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+    cursor: auto;
+}
+
+button, input{
+  font-size: 100px;
 }
 
 #display{
@@ -106,12 +106,20 @@ input {
         box-shadow: inset 0px 0px 80px grey;
     }
 
+    .display{
+      height: 40%;
+    }
+
+    Button, input {
+      font-size: 150px;
+    }
+
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
-  .width-controller{
+  .widthController{
     width: 960px;
   }
 
@@ -122,10 +130,18 @@ input {
   button:active{
     box-shadow: inset 0px 0px 100px grey;
 }
-  .counter-container, .counter-key, .display{
+  .counterContainer, .counter-k.operatorButtons, .display{
     border: solid 4px black;
   }
 
+  .display{
+    height: 40%;
+  }
+
+  Button, input {
+    font-size: 200px;
+  }
+  
     
 }
 
