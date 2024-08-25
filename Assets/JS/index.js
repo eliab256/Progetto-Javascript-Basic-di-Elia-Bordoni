@@ -50,14 +50,14 @@ function buildMinusButton(){
 function minusOperation(){                                  //subtraction operation
     counter--;
     updateCounter();
-}
+};
 
-function updateCounter(){                                    //counter value update
+function updateCounter(){              //counter value update
     const displayInput = document.getElementById('display');
     if (displayInput) {  
         displayInput.value = counter;                     
     } 
-}
+};
 
 window.addEventListener("DOMContentLoaded", function(){
     buildDisplay();
