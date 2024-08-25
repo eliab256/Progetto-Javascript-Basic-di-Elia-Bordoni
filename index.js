@@ -14,6 +14,7 @@ function buildDisplay(){                                    //building display d
     displayDiv.appendChild(displayInput);  
 };
 
+
 function buildPlusButton(){
     const plusButtonDiv = document.createElement("div");    //building plus button div
     plusButtonDiv.classList.add("operatorButtons");
@@ -23,9 +24,18 @@ function buildPlusButton(){
     plusButton.type = "button";
     plusButton.value = "+";
     plusButton.textContent = plusButton.value;
-    plusButton.onclick = counter++;
+    plusButton.addEventListener("click", plusOperation);
     plusButtonDiv.appendChild(plusButton);   
 };
+
+function plusOperation(){
+    counter++;
+    const displayInput = document.getElementById('display');
+    if (displayInput) {  
+        displayInput.value = counter;  
+    } 
+}
+
 
 function buildMinusButton(){                                
     const minusButtonDiv = document.createElement("div");   //building minus button div
@@ -36,9 +46,18 @@ function buildMinusButton(){
     minusButton.type = "button";
     minusButton.value = "-";
     minusButton.textContent = minusButton.value;
-    minusButton.onclick = counter--;
+    minusButton.addEventListener("click", minusOperation);
     minusButtonDiv.appendChild(minusButton);   
 };
+
+function minusOperation(){
+    counter--;
+    const displayInput = document.getElementById('display');
+    if (displayInput) {  
+        displayInput.value = counter;  
+    } 
+}
+
 
 
 window.addEventListener("DOMContentLoaded", function(){
