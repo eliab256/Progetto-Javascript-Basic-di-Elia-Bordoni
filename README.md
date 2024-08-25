@@ -1,5 +1,7 @@
 # Progetto Javascript Basic di Elia Bordoni
 
+https://eb-javascriptcounter.netlify.app/
+
 ## Indice
 
 1. Description
@@ -13,6 +15,8 @@
 
 The Javascript Counter project is a web application that includes an incremental and decremental counter. Users can update the counter value using the + and - buttons, and see the value in real time on the display.
 
+![Counter Image](Assets/img/counter%20Image.jpg)
+
 ## 2. Installation
 
     1. Clone the repository:
@@ -22,3 +26,4 @@ The Javascript Counter project is a web application that includes an incremental
         cd Progetto-Javascript-Basic-di-Elia-Bordoni
 
     No additional dependencies are required for this project.
+
