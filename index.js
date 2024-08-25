@@ -28,12 +28,9 @@ function buildPlusButton(){
     plusButtonDiv.appendChild(plusButton);   
 };
 
-function plusOperation(){
+function plusOperation(){                                   //addition operation
     counter++;
-    const displayInput = document.getElementById('display');
-    if (displayInput) {  
-        displayInput.value = counter;  
-    } 
+    updateCounter();
 }
 
 
@@ -50,19 +47,20 @@ function buildMinusButton(){
     minusButtonDiv.appendChild(minusButton);   
 };
 
-function minusOperation(){
+function minusOperation(){                                  //subtraction operation
     counter--;
-    const displayInput = document.getElementById('display');
-    if (displayInput) {  
-        displayInput.value = counter;  
-    } 
+    updateCounter();
 }
 
-
+function updateCounter(){                                    //counter value update
+    const displayInput = document.getElementById('display');
+    if (displayInput) {  
+        displayInput.value = counter;                     
+    } 
+}
 
 window.addEventListener("DOMContentLoaded", function(){
     buildDisplay();
     buildPlusButton();
     buildMinusButton();
-
 });
