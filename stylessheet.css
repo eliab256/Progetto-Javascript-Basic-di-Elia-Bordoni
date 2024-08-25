@@ -38,14 +38,19 @@
   }
 
   .operatorButtons{
+    
     width: 48% ;
     border: black solid 3px;
     height: 30%;
     border-radius: 10px;
-    margin: 1%
+    margin: 1%;
+
 }
 
   button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
     border-radius: 10px;
