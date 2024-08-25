@@ -31,9 +31,10 @@
     width:80%;
     border: black 3px solid;
     border-radius: 8px;
-    background-image: url(Assets/img/Wood\ Material.png);
+   /* background-image: url(Assets/img/Wood\ Material.png);
     background-position: center; 
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background: linear-gradient(to top,rgb(4, 4, 147), rgb(16, 16, 16));
     padding: 3%;
     
    
