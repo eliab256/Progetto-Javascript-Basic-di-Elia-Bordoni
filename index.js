@@ -1,19 +1,23 @@
 let counter = 0;
+const counterContainer = document.getElementById("counterContainer");
 
-function updateDisplay(){
-    document.getElementById("display").value = counter;
-}
+function buildDisplayDiv(){                                    //building display div
+    const displayDiv = document.createElement("div");
+    displayDiv.classList.add("display");
+    counterContainer.appendChild(displayDiv);
 
-function addition(){
-    counter++;
-    updateDisplay();
-}
-
-
-function subtraction(){
-    counter--;
-    updateDisplay();
-
-}
+    const displayInput = document.createElement("input");      //building display input
+    displayInput.type = 'text';
+    displayInput.id = 'display';
+    displayInput.value = counter;
+    displayInput.readOnly = true;
+    displayDiv.appendChild(displayInput);  
+};
 
 
+
+
+window.addEventListener("DOMContentLoaded", function(){
+    buildDisplayDiv();
+
+});
